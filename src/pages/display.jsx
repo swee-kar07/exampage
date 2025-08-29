@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import '../index.css'
-import questionsData from '../datas.json'
+import MathRenderer from '../components/MathRenderer'
 
-const Display = () => {
+const Display = ({ questionsData, subjectInfo, onBackToSubjects }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [selectedAnswers, setSelectedAnswers] = useState({})
   const [timeRemaining, setTimeRemaining] = useState(0)
@@ -10,7 +10,7 @@ const Display = () => {
   const [examFinished, setExamFinished] = useState(false)
   const [showResults, setShowResults] = useState(false)
 
-  const questions = questionsData.questions
+  const questions = questionsData || []
   const currentQuestion = questions[currentQuestionIndex]
   
   // Calculate total exam time (sum of all question durations)
@@ -101,12 +101,12 @@ const Display = () => {
     return (
       <div className='bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center p-4'>
         <div className='bg-white rounded-xl shadow-2xl p-8 max-w-md w-full text-center'>
-          <h1 className='text-3xl font-bold text-gray-800 mb-4'>Physics Exam Portal by <span className='text-blue-600'>Sweekar</span></h1>
+          <h1 className='text-3xl font-bold text-gray-800 mb-4'>{subjectInfo?.name || 'Exam'} Portal by <span className='text-blue-600'>Sweekar</span></h1>
           <div className='space-y-4 text-gray-600'>
             <p><span className='font-semibold'>Total Questions:</span> {questions.length}</p>
             <p><span className='font-semibold'>Total Time:</span> {formatTime(totalExamTime)}</p>
-            <p><span className='font-semibold'>Subject:</span> {questions[0].subject}</p>
-            <p><span className='font-semibold'>Marks per Question:</span> {questions[0].marks}</p>
+            <p><span className='font-semibold'>Subject:</span> {subjectInfo?.name || questions[0]?.subject}</p>
+            <p><span className='font-semibold'>Marks per Question:</span> {questions[0]?.marks}</p>
           </div>
           <button 
             onClick={startExam}
@@ -114,6 +114,14 @@ const Display = () => {
           >
             Start Exam
           </button>
+          {onBackToSubjects && (
+            <button 
+              onClick={onBackToSubjects}
+              className='mt-4 text-gray-600 hover:text-gray-800 font-medium'
+            >
+              ← Choose Different Subject
+            </button>
+          )}
         </div>
       </div>
     )
@@ -150,12 +158,22 @@ const Display = () => {
               </p>
             </div>
           </div>
-          <button 
-            onClick={restartExam}
-            className='mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300'
-          >
-            Restart Exam
-          </button>
+          <div className="space-y-3">
+            <button 
+              onClick={restartExam}
+              className='w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300'
+            >
+              Restart Exam
+            </button>
+            {onBackToSubjects && (
+              <button 
+                onClick={onBackToSubjects}
+                className='w-full bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300'
+              >
+                Choose Different Subject
+              </button>
+            )}
+          </div>
         </div>
       </div>
     )
@@ -167,7 +185,7 @@ const Display = () => {
       <div className='bg-white shadow-lg rounded-lg p-4 mb-6'>
         <div className='flex justify-between items-center'>
           <div>
-            <h1 className='text-2xl font-bold text-gray-800'>Physics Exam</h1>
+            <h1 className='text-2xl font-bold text-gray-800'>{subjectInfo?.name || 'Exam'}</h1>
             <p className='text-gray-600'>Question {currentQuestionIndex + 1} of {questions.length}</p>
           </div>
           <div className='text-right'>
@@ -201,7 +219,7 @@ const Display = () => {
             </span>
           </div>
           <h2 className='text-lg font-medium text-gray-800 leading-relaxed'>
-            {currentQuestion.question}
+            <MathRenderer>{currentQuestion.question}</MathRenderer>
           </h2>
         </div>
 
@@ -229,7 +247,7 @@ const Display = () => {
                   }`}>
                     {optionLetter.toUpperCase()}
                   </span>
-                  <span className='flex-1'>{currentQuestion[optionKey]}</span>
+                  <span className='flex-1'><MathRenderer>{currentQuestion[optionKey]}</MathRenderer></span>
                 </div>
               </button>
             )
