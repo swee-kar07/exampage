@@ -101,7 +101,7 @@ const Display = () => {
     return (
       <div className='bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center p-4'>
         <div className='bg-white rounded-xl shadow-2xl p-8 max-w-md w-full text-center'>
-          <h1 className='text-3xl font-bold text-gray-800 mb-4'>Physics Exam Portal</h1>
+          <h1 className='text-3xl font-bold text-gray-800 mb-4'>Physics Exam Portal by <span className='text-blue-600'>Sweekar</span></h1>
           <div className='space-y-4 text-gray-600'>
             <p><span className='font-semibold'>Total Questions:</span> {questions.length}</p>
             <p><span className='font-semibold'>Total Time:</span> {formatTime(totalExamTime)}</p>
