@@ -1,0 +1,125 @@
+{
+  "questions": [
+    {
+      "qid": 33,
+      "question": "A motor pump-set of efficiency 80 % lifts 6000 litres of water per minute from a well 20 meters deep. If g=10 m/s2 then its input power is",
+      "optiona": "20 kW",
+      "optionb": "25 kW",
+      "optionc": "16 kW",
+      "optiond": "250 kW",
+      "answer": "b",
+      "subject": "Physics",
+      "marks": 1,
+      "duration": 50
+    },
+    {
+      "qid": 32,
+      "question": "An electric pump draws water from a well of depth 50m at a rate of 2m^3 per second. The water is ejected from the pump with velocity, v=10m/s. If the efficiency of the pump η=80%, the input power consumption of the pump is: (g=10m/s^2)",
+      "optiona": "1100 kW",
+      "optionb": "880 kW",
+      "optionc": "1375 kW",
+      "optiond": "1080 kW",
+      "answer": "c",
+      "subject": "Physics",
+      "marks": 1,
+      "duration": 50
+    },
+    {
+      "qid": 31,
+      "question": "A motor pump lifts 6 tons of water from a well of depth 2m to the first floor of height 35m from the ground floor in 20 minutes. The power of the pump (in kW) is \n[g = 10m/s^2]\n",
+      "optiona": "6",
+      "optionb": "1.85",
+      "optionc": "12",
+      "optiond": "3",
+      "answer": "b",
+      "subject": "Physics",
+      "marks": 1,
+      "duration": 50
+    },
+    {
+      "qid": 30,
+      "question": " Kinetic energy of a body is increased most by doubling its",
+      "optiona": "mass",
+      "optionb": "density",
+      "optionc": "weight",
+      "optiond": "speed",
+      "answer": "d",
+      "subject": "Physics",
+      "marks": 1,
+      "duration": 50
+    },
+    {
+      "qid": 29,
+      "question": "KE of a body increased by 44%. What is the percentage increase in the momentum?",
+      "optiona": "10%",
+      "optionb": "20%",
+      "optionc": "33%",
+      "optiond": "44%",
+      "answer": "b",
+      "subject": "Physics",
+      "marks": 1,
+      "duration": 50
+    },
+    {
+      "qid": 28,
+      "question": "If K.E of a body increases by 0.1 %, the percentage increase in its momentum will be",
+      "optiona": "0.05%",
+      "optionb": "0.1%",
+      "optionc": "1%",
+      "optiond": "10%",
+      "answer": "a",
+      "subject": "Physics",
+      "marks": 1,
+      "duration": 50
+    },
+    {
+      "qid": 27,
+      "question": "If the linear momentum is increased by 5%, the kinetic energy will increase by",
+      "optiona": "50%",
+      "optionb": "100%",
+      "optionc": "150%",
+      "optiond": "10%",
+      "answer": "d",
+      "subject": "Physics",
+      "marks": 1,
+      "duration": 50
+    },
+    {
+      "qid": 26,
+      "question": "If momentum is increased by 20%, then kinetic energy increases by",
+      "optiona": "48%",
+      "optionb": "44%",
+      "optionc": "40%",
+      "optiond": "36%",
+      "answer": "b",
+      "subject": "Physics",
+      "marks": 1,
+      "duration": 50
+    },
+    {
+      "qid": 25,
+      "question": "If the momentum of a body increases by 0.01%, its kinetic energy will increase by",
+      "optiona": "0.01%",
+      "optionb": "0.02%",
+      "optionc": "0.04%",
+      "optiond": "0.08%",
+      "answer": "b",
+      "subject": "Physics",
+      "marks": 1,
+      "duration": 50
+    },
+    {
+      "qid": 24,
+      "question": "If the increase in the kinetic energy of a body is 22 %, then the increase in the momentum will be",
+      "optiona": "22%",
+      "optionb": "44%",
+      "optionc": "10%",
+      "optiond": "30%",
+      "answer": "c",
+      "subject": "Physics",
+      "marks": 1,
+      "duration": 50
+    }
+  ],
+  "total": 26
+}
