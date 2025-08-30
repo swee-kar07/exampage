@@ -1,0 +1,53 @@
+{
+ "questions": [
+        {
+            "qid": 1,
+            "question": "What is the chemical formula of water?",
+            "optiona": "$H_2O$",
+            "optionb": "$CO_2$",
+            "optionc": "$NaCl$",
+            "optiond": "$H_2SO_4$",
+            "answer": "a",
+            "subject": "Chemistry",
+            "marks": 1,
+            "duration": 60
+        },
+        {
+            "qid": 2,
+            "question": "What is the chemical formula of carbon dioxide?",
+            "optiona": "$H_2O$",
+            "optionb": "$CO_2$",
+            "optionc": "$NaCl$",
+            "optiond": "$H_2SO_4$",
+            "answer": "b",
+            "subject": "Chemistry",
+            "marks": 1,
+            "duration": 60
+        },
+        {
+            "qid": 3,
+            "question": "What is the chemical formula of sodium chloride?",
+            "optiona": "$H_2O$",
+            "optionb": "$CO_2$",
+            "optionc": "$NaCl$",
+            "optiond": "$H_2SO_4$",
+            "answer": "c",
+            "subject": "Chemistry",
+            "marks": 1,
+            "duration": 60
+        },
+        {
+            "qid": 4,
+            "question": "What is the chemical formula of sulfuric acid?",
+            "optiona": "$H_2O$",
+            "optionb": "$CO_2$  ",
+            "optionc": "$NaCl$",
+            "optiond": "$H_2SO_4$",
+            "answer": "d",
+            "subject": "Chemistry",
+            "marks": 1,
+            "duration": 60
+        }
+    ],
+    "total": 4
+}

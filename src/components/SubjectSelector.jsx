@@ -28,6 +28,17 @@ const SubjectSelector = ({ onSubjectSelect, onBack }) => {
         totalQuestions: 20,
         difficulty: 'Advanced',
         duration: '15-20 minutes'
+      },
+      {
+        id: 'chemistry1',
+        name: 'Chemistry',
+        description: 'Organic Chemistry, Inorganic Chemistry, and Physical Chemistry',
+        icon: '🔬',
+        color: 'from-yellow-500 to-yellow-700',
+        file: 'chemistry1.json',
+        totalQuestions: 10,
+        difficulty: 'Intermediate',
+        duration: '8-10 minutes'
       }
     ];
 
